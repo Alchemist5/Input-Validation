@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <h1>Account Login/Sign Up</h1>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Sign Up</a></li>
+                    <li><a href="#">Notifications</a>
+                        <ul>
+                            <li><a href="#">Activity</a></li>
+                            <li><a href="#">Inbox</a></li>
+                            <li><a href="#">Replies</a></li>
+                            <li><a href="#">Comments</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-wrapper">
+            <input type="checkbox" id="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href="">Notifications</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <form method="POST" id="form">
+                <h2 class="title">Sign Up</h2>
+                <div>
+                    <label for="name">First Name:</label>
+                    <input type="text"  class="form-input" name="FirstName" placeholder="First Name">
+                </div>
+                <div>
+                    <label for="name">Last Name:</label>
+                    <input type="text" class="form-input" name="LastName" placeholder="Last Name">
+                </div>
+                <div>
+                    <label for="name">Username:</label>
+                    <input type="text/number" class="form-input username"  placeholder="Username" required>
+                </div>
+                <div>
+                    <label for="name">Email Address:</label>
+                    <input type="email" class="form-input email" name="email" placeholder="Email Address" required>
+                </div>
+                <div>
+                    <label for="name">Password:</label>
+                    <input type="password" class="form-input password"  placeholder="Password" required>
+                </div>
+                <div>
+                    <label for="name">Confirm Password:</label>
+                    <input type="password" class="form-input cpassword"  placeholder="Confirm Password" required>
+                </div>
+                <div>
+                    <input type="submit" class="form-input btn"  value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="signup.js"></script>
+    <!-- <script src="oopES5.js"></script> -->
+</body>
+</html>
